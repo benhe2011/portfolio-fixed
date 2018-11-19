@@ -1,0 +1,3 @@
+﻿  list.cpp
+c:\users\ben\source\repos\cs32hw4number4\cs32hw4number4\list.cpp(40): warning C4018: '<': signed/unsigned mismatch
+  cs32hw4number4.vcxproj -> c:\users\ben\source\repos\cs32hw4number4\Debug\cs32hw4number4.exe

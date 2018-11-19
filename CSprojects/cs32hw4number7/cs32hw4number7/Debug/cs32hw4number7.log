@@ -1,0 +1,5 @@
+﻿  sorts.cpp
+c:\users\ben\source\repos\cs32hw4number7\cs32hw4number7\sorts.cpp(135): warning C4018: '<': signed/unsigned mismatch
+c:\users\ben\source\repos\cs32hw4number7\cs32hw4number7\sorts.cpp(249): warning C4018: '<': signed/unsigned mismatch
+c:\users\ben\source\repos\cs32hw4number7\cs32hw4number7\sorts.cpp(260): warning C4018: '<': signed/unsigned mismatch
+  cs32hw4number7.vcxproj -> c:\users\ben\source\repos\cs32hw4number7\Debug\cs32hw4number7.exe

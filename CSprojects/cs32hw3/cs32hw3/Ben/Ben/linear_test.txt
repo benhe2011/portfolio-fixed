@@ -1,0 +1,54 @@
+#include <cassert>
+int main()
+{
+	std::string * empty = new std::string[0];
+
+	int n = 5;
+	std::string * temp = new std::string[n];
+	temp[0] = "a";
+	temp[1] = "b";
+	temp[2] = "b";
+	temp[3] = "b";
+	temp[4] = "a";
+
+	int m = 1;
+	std::string * test = new std::string[m];
+	test[0] = "c";
+	//test[1] = "5";
+	//test[2] = "a";
+	//test[3] = "a";
+	//test[4] = "a";
+
+	int t = 4;
+	std::string * flase = new std::string[t];
+	flase[0] = "";
+	flase[1] = "";
+	flase[2] = "";
+	flase[3] = "a";
+
+	//cout << boolalpha << allTrue(temp, n) << endl;
+	//cout << countFalse(temp, n) << endl;
+	//cout << firstFalse(temp, n) << endl;
+	//cout << indexOfLeast(temp, n) << endl;
+
+	//cout << firstFalse(empty, 0) << endl;
+	//cout << indexOfLeast(empty, 0) << endl;
+
+	//cout << indexOfLeast(test, 1) << endl;
+
+	cout << boolalpha << includes(temp, n, test, m) << endl;
+
+	cout << boolalpha << includes(test, m, temp, n) << endl;
+
+	cout << boolalpha << includes(temp, n, empty, 0) << endl;
+
+	cout << boolalpha << includes(empty, 0, temp, n) << endl;
+
+	assert(firstFalse(temp, n) == 0);
+	assert(firstFalse(flase, t) == 3);
+
+	delete[] empty;
+	delete[] temp;
+	delete[] test;
+	return 0;
+}

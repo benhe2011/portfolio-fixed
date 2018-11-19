@@ -1,0 +1,5 @@
+﻿  interactivetester.cpp
+  Dictionary.cpp
+c:\users\ben\source\repos\cs32project4\cs32project4\dictionary.cpp(67): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  cs32project4.vcxproj -> C:\Users\Ben\source\repos\cs32project4\Debug\cs32project4.exe

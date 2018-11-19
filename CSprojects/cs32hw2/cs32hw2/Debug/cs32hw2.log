@@ -1,0 +1,10 @@
+﻿  mazestack.cpp
+  mazequeue.cpp
+  eval.cpp
+c:\users\ben\source\repos\cs32hw2\cs32hw2\eval.cpp(20): warning C4018: '<': signed/unsigned mismatch
+c:\users\ben\source\repos\cs32hw2\cs32hw2\eval.cpp(132): warning C4018: '<': signed/unsigned mismatch
+c:\users\ben\source\repos\cs32hw2\cs32hw2\eval.cpp(153): warning C4018: '<': signed/unsigned mismatch
+c:\users\ben\source\repos\cs32hw2\cs32hw2\eval.cpp(164): warning C4018: '<': signed/unsigned mismatch
+c:\users\ben\source\repos\cs32hw2\cs32hw2\eval.cpp(218): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  cs32hw2.vcxproj -> C:\Users\Ben\source\repos\cs32hw2\Debug\cs32hw2.exe

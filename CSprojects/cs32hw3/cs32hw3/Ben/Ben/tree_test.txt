@@ -1,0 +1,80 @@
+#include <cassert>
+#include <iostream>
+
+void print(string a[], int n)
+{
+	cout << "Size: " << n << endl << "{ ";
+	for (int i = 0; i < n; i++)
+		cout << a[i] << " ";
+	cout << "}" << endl;
+	cout << "Copy: { \"" << a[0] << "\"";
+	for (int i = 1; i < n; i++)
+		cout << ", \"" << a[i] << "\"";
+	cout << " }"<< endl << endl;
+}
+
+void user()
+{
+	int n;
+	cout << endl << "How many Elements? " << endl;
+	cin >> n;
+	system("CLS");
+	string * temp = new string[n];
+	cout << endl << "Enter elements: ";
+	cin.ignore(1000, '\n');
+	for (int i = 0; i < n; i++)
+		getline(cin, temp[i]);
+	cout << endl;
+	print(temp, n);
+	order(temp, n);
+	print(temp, n);
+	delete[] temp;
+}
+
+int main()
+{
+	string main[7] = { "stan", "kyle", "cartman", "kenny", "kyle", "cartman", "butters" };
+	string a[3] = { "stan", "kenny", "cartman" };
+	string b[3] = { "stan", "cartman", "butters" };
+	string c[3] = { "kenny", "stan", "cartman" };
+	string d[3] = { "kyle", "cartman", "butters" };
+
+	assert(countIncludes(main, 7, a, 3) == 1);
+	assert(countIncludes(main, 7, b, 3) == 2);
+	assert(countIncludes(main, 7, c, 3) == 0);
+	assert(countIncludes(main, 7, d, 3) == 3);
+
+	int n = 5;
+	string * temp = new string[n];
+	temp[0] = "5";
+	temp[1] = "4";
+	temp[2] = "3";
+	temp[3] = "2";
+	temp[4] = "4";
+
+	print(temp, n);
+	order(temp, n);
+	print(temp, n);
+	cout << endl;
+
+	int m = 2;
+	string * attackOrder = new string[m];
+	attackOrder[0] = "a";
+	attackOrder[1] = "";
+
+	print(attackOrder, m);
+	order(attackOrder, m);
+	print(attackOrder, m);
+
+	string t[20] = { "7", "5", "3", "2", "5", "7", "9", "9", "0", "4", "6", "4", "2", "1", "6", "7", "8", "9", "5", "3" };
+	print(t, 20);
+	order(t, 20);
+	print(t, 20);
+
+	//system("CLS");
+	//user();
+
+	delete[] temp;
+	delete[] attackOrder;
+	return 0;
+}
